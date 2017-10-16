@@ -1,0 +1,60 @@
+package model;
+
+import java.io.Serializable;
+
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+@Entity
+@Table(name="people")
+public class People implements Serializable  {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	@Id
+	     @Column(name="id")
+	private int id;
+	@Column(name="name")
+	private String name;
+	
+
+	public People(){
+	}
+
+
+	public int getId() {
+		return id;
+	}
+
+
+	public void setId(int id) {
+		this.id = id;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public People(int id, String name) {
+		super();
+		this.id = id;
+		this.name = name;
+	}
+
+
+	@Override
+	public String toString() {
+		return "People [id=" + id + ", name=" + name + "]";
+	}
+
+
+}
