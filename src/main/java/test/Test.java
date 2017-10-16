@@ -13,7 +13,7 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		 People person = new People(106,"María");
-		 People person2 = new People(1,"Maríaaaaaaaaaaaaaaaaaaaa");
+		 People person2 = new People(155,"Maríaaaaaaaaaaaaaaaaaaaa");
 		 
 		 
 		//listPeople();
